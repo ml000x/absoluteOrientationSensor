@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sensor</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="./script.js" defer></script>
+    <script src="./geolocation.js" defer></script>
+    <script src="./orientation.js" defer></script>
+    <script src="./absoluteOrientation.js" defer></script>
+</head>
+<body>
+<h1>Geolocation!</h1>
+<button id="get-position">
+    get current position
+</button>
+|
+<button id="watch-position">
+    watch position
+</button>
+<button id="clear-watch" disabled>
+    clear watch
+</button>
+<p id="pos-status"></p>
+<pre id="position"></pre>
+
+<h1>Device Orientation!</h1>
+<button id="get-orientation">
+    observe device orientation
+</button>
+<button id="stop-get-orientation" disabled>
+    stop getting device orientation
+</button>
+<p id="orientation-status"></p>
+<pre id="orientation"></pre>
+
+<h1>Absolute Orientation!</h1>
+<button id="observe-abs-orientation">
+    observe absolute orientation
+</button>
+<button id="stop-observe-abs" disabled>
+    stop observing absolute orientation
+</button>
+<p id="abs-orientation-status"></p>
+<pre id="abs-orientation"></pre>
+</body>
+</html>
